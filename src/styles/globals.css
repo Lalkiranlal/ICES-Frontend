@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Sleek Obsidian Matte Carbon & Steel Blue */
+    --bg-base: #080C14;
+    --bg-surface: #0E1422;
+    --bg-card: #131B2D;
+    --bg-subtle: #19233A;
+    --bg-hover: #202D4A;
+
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-card: rgba(255, 255, 255, 0.12);
+    --border-accent: #3B82F6;
+
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --text-muted: #64748B;
+
+    /* Matte Steel Blue Accent */
+    --brand-primary: #3B82F6;
+    --brand-dark: #1D4ED8;
+    --brand-pill: rgba(59, 130, 246, 0.12);
+
+    /* Threat Indicator */
+    --threat-crimson: #EF4444;
+    --threat-bg: rgba(239, 68, 68, 0.12);
+  }
+
+  body {
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Plus Jakarta Sans", "Inter", sans-serif;
+    overflow-x: hidden;
+    letter-spacing: -0.012em;
+  }
+}
+
+
+
+/* Restrained Minimal Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.5);
+}
